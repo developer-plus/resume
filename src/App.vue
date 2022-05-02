@@ -4,9 +4,9 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Vitemplate',
+  title: 'developer-plus',
   meta: [
-    { name: 'description', content: 'Vitemplate.' }
+    { name: 'description', content: 'Resume.' }
   ]
 })
 </script>
