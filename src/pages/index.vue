@@ -11,6 +11,8 @@ import 'bytemd/dist/index.css'
 import 'highlight.js/styles/vs.css'
 import 'github-markdown-css'
 
+const CACHE_KEY = '__RESUME_CONTENT__'
+
 const plugins = [
   gfm(),
   highlight()
@@ -18,9 +20,18 @@ const plugins = [
 
 const content = ref()
 
+const throttledFn = useThrottleFn(() => {
+  localStorage.setItem(CACHE_KEY, content.value)
+}, 1000)
+
 const handleChange = (v: string) => {
   content.value = v
+  throttledFn()
 }
+
+onMounted(() => {
+  content.value = localStorage.getItem(CACHE_KEY) || ''
+})
 </script>
 
 <style>
