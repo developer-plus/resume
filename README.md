@@ -1,2 +1,3 @@
 # resume
-Resume generator.
+
+A free and open source resume builder.
