@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between items-center px-5 h-56px text-2xl">
     <h2>
-      developer-plus
+      resume-generator
     </h2>
 
     <nav>
