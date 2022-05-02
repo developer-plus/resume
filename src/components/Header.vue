@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center px-5 h-56px text-2xl border-b border-gray-200 dark:border-gray-200/50">
+  <header class="flex justify-between items-center px-5 h-56px text-2xl">
     <h2>
       developer-plus
     </h2>

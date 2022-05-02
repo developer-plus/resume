@@ -8,8 +8,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@bytemd/plugin-gfm": "^1.13.1",
+    "@bytemd/plugin-highlight": "^1.13.1",
+    "@bytemd/vue-next": "^1.13.1",
     "@vueuse/core": "^8.3.1",
     "@vueuse/head": "^0.7.5",
+    "bytemd": "^1.13.1",
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.5.1",
     "nprogress": "^0.2.0",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
