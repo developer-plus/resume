@@ -36,7 +36,7 @@
     "vite": "2.9.7",
     "vite-plugin-pages": "0.22.0",
     "vite-plugin-vue-layouts": "0.6.0",
-    "vite-ssg": "0.19.2",
+    "vite-ssg": "0.20.0",
     "vue-tsc": "0.34.11"
   }
 }
