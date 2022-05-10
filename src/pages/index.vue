@@ -57,21 +57,26 @@ onMounted(() => {
   padding: 3px;
   border: 1px solid #989898;
   border-radius: 5px;
-  /* background-color: #32bb13; */
 }
 #download-btn:hover {
   background-color: #d8dee4;
 }
 
 @media print {
-    .markdown-body {
+  .bytemd-editor  {
+    display: none;
+  }
+    .bytemd-preview {
+      display: block;
+      width: auto!important;;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
+      bottom: 0;
       overflow: visible;
-      background-color: red!important;;
-      z-index: 9999!important;
+      background-color: #fff;
+      z-index: 999!important;
     }
     .bytemd-status {
       display: none!important;;
