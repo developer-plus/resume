@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper" @click="download">
-    <button id="download-btn">下载为pdf</button>
+    <button id="download-btn">
+      下载为pdf
+    </button>
   </div>
   <Editor
     :value="content"
@@ -29,6 +31,8 @@ const throttledFn = useThrottleFn(() => {
 }, 1000)
 
 const handleChange = (v: string) => {
+  // console.log(v);
+
   content.value = v
   throttledFn()
 }
@@ -38,6 +42,8 @@ const download = () => {
 }
 
 onMounted(() => {
+  const el = document.querySelector('.bytemd-preview')!
+  el.setAttribute('contenteditable', 'true')
   content.value = localStorage.getItem(CACHE_KEY) || ''
 })
 </script>
