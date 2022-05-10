@@ -1,5 +1,13 @@
 <template>
-  <Editor :value="content" :plugins="plugins" :locale="zh_locale" @change="handleChange" />
+  <div class="wrapper" @click="download">
+    <button id="download-btn">下载为pdf</button>
+  </div>
+  <Editor
+    :value="content"
+    :plugins="plugins"
+    :locale="zh_locale"
+    @change="handleChange"
+  />
 </template>
 
 <script setup lang="ts">
@@ -10,13 +18,9 @@ import highlight from '@bytemd/plugin-highlight'
 import 'bytemd/dist/index.css'
 import 'highlight.js/styles/vs.css'
 import 'github-markdown-css'
-
 const CACHE_KEY = '__RESUME_CONTENT__'
 
-const plugins = [
-  gfm(),
-  highlight()
-]
+const plugins = [gfm(), highlight()]
 
 const content = ref()
 
@@ -29,6 +33,10 @@ const handleChange = (v: string) => {
   throttledFn()
 }
 
+const download = () => {
+  window.print()
+}
+
 onMounted(() => {
   content.value = localStorage.getItem(CACHE_KEY) || ''
 })
@@ -38,4 +46,38 @@ onMounted(() => {
 .bytemd {
   height: calc(100vh - 56px);
 }
+
+.wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+#download-btn {
+  margin: 5px 10px;
+  padding: 3px;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  /* background-color: #32bb13; */
+}
+#download-btn:hover {
+  background-color: #d8dee4;
+}
+
+@media print {
+    .markdown-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      overflow: visible;
+      background-color: red!important;;
+      z-index: 9999!important;
+    }
+    .bytemd-status {
+      display: none!important;;
+    }
+  }
+  @page {
+    margin: 0;
+  }
 </style>
