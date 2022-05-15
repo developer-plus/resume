@@ -50,7 +50,7 @@ onMounted(() => {
 
 <style>
 .bytemd {
-  height: calc(100vh - 56px);
+  height: calc(100vh - 56px - 42px);
 }
 
 .wrapper {
@@ -73,8 +73,8 @@ onMounted(() => {
     display: none;
   }
     .bytemd-preview {
-      display: block;
-      width: auto!important;;
+      display: block!important;
+      width: auto!important;
       position: absolute;
       top: 0;
       left: 0;
