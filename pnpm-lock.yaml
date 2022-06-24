@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@bytemd/plugin-gfm': 1.13.1
@@ -35,6 +35,7 @@ dependencies:
   '@bytemd/plugin-gfm': 1.13.1_bytemd@1.13.1
   '@bytemd/plugin-highlight': 1.13.1_bytemd@1.13.1
   '@bytemd/vue-next': 1.13.1_vue@3.2.33
+
   '@vueuse/core': 8.4.2_vue@3.2.33
   '@vueuse/head': 0.7.6_vue@3.2.33
   bytemd: 1.13.1
@@ -94,7 +95,6 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.16.7
       to-fast-properties: 2.0.0
-
   /@bytemd/plugin-gfm/1.13.1_bytemd@1.13.1:
     resolution: {integrity: sha512-V6ioQtGAW4T73Va2wVG8nGhGulPKi6FcPCN3yn4aE+FUV4/1j5lXXOEk7nPsfj9ZSlmmkappAc7BWnuKie2N4w==}
     peerDependencies:
@@ -112,12 +112,12 @@ packages:
       highlight.js: 11.5.1
     dev: false
 
-  /@bytemd/vue-next/1.13.1_vue@3.2.33:
-    resolution: {integrity: sha512-XgZgydr63CrkXI6cnftr6tZBqhTlch8Km0eZ2mGOKqkEkXrMfQAVQ++hPx1rOkB88vyppBb+S1M04COTWWlr4g==}
+  /@bytemd/vue-next/1.14.0_vue@3.2.33:
+    resolution: {integrity: sha512-kdjDDj1uEiybeJaUAFlHl7j0V7acLGL8+R6KdXkKUxiyfD2oMbltjMIl5l+XmX2hzGcU85ou2oMTOltCAL9PsQ==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
-      bytemd: 1.13.1
+      bytemd: 1.14.0
       vue: 3.2.33
     dev: false
 
@@ -953,7 +953,6 @@ packages:
     dependencies:
       '@types/codemirror': 5.60.5
     dev: false
-
   /cac/6.7.12:
     resolution: {integrity: sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==}
     engines: {node: '>=8'}
