@@ -16,6 +16,7 @@
     "bytemd": "1.13.1",
     "github-markdown-css": "5.1.0",
     "highlight.js": "11.5.1",
+    "html-22-md": "^0.5.8",
     "nprogress": "0.2.0",
     "vue": "3.2.33",
     "vue-router": "4.0.15"
